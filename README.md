@@ -124,7 +124,7 @@ This repo also includes a Codex plugin manifest and marketplace entry, so you ca
 1. Add this GitHub repository as a Codex marketplace:
 
 ```bash
-codex plugin marketplace add Leonxlnx/taste-skill
+codex plugin marketplace add hott0mott0/taste-skill
 ```
 
 2. Install the plugin from that marketplace:
@@ -134,6 +134,14 @@ codex plugin add taste-skill@taste-skill
 ```
 
 3. Start a new Codex task after installing so the newly added skills are picked up cleanly.
+
+If you installed the plugin before the Git source fix, refresh the marketplace and reinstall it:
+
+```bash
+codex plugin remove taste-skill@taste-skill
+codex plugin marketplace upgrade taste-skill
+codex plugin add taste-skill@taste-skill
+```
 
 For local development, run `codex plugin marketplace add .` from the repository root instead. The marketplace definition lives at `.agents/plugins/marketplace.json`, and the Codex plugin manifest lives at `.codex-plugin/plugin.json`.
 

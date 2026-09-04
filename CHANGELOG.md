@@ -9,6 +9,7 @@ All notable changes to taste-skill live here. The repo follows SemVer-ish discip
 ### Repo
 
 - Added a Codex plugin manifest and repo marketplace so the full skill collection can be installed with `codex plugin`.
+- Fixed the Codex marketplace entry to install the repository-root plugin from its Git URL, ensuring bundled skills are included in remote installs.
 - `taste-skill` (install name `design-taste-frontend`) is now **v2 (experimental)**. The previous v1 is preserved as `taste-skill-v1` (install name `design-taste-frontend-v1`).
 - New `CHANGELOG.md` (this file).
 

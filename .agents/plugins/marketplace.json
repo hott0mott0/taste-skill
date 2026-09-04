@@ -7,8 +7,9 @@
     {
       "name": "taste-skill",
       "source": {
-        "source": "local",
-        "path": "./"
+        "source": "url",
+        "url": "https://github.com/hott0mott0/taste-skill.git",
+        "ref": "main"
       },
       "policy": {
         "installation": "AVAILABLE",
